@@ -1,0 +1,10 @@
+<div class="modal-backdrop">
+  <div class="modal">
+    <h2>{{ title }}</h2>
+    <p>{{ text }}</p>
+    @if (secondaryText) {
+      <p>{{ secondaryText }}</p>
+    }
+    <button type="button" (click)="onClose()">{{ buttonText }}</button>
+  </div>
+</div>

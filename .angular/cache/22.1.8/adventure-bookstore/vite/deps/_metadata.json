@@ -1,0 +1,72 @@
+{
+  "hash": "c5015ffb",
+  "configHash": "ee9ac593",
+  "lockfileHash": "cd216f54",
+  "browserHash": "db9c48b7",
+  "optimized": {
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "42290c4b",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "e1addc1c",
+      "needsInterop": false
+    },
+    "@angular/core/rxjs-interop": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/rxjs-interop.mjs",
+      "file": "@angular_core_rxjs-interop.js",
+      "fileHash": "23f6abec",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "d8f5ae54",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "142bb7c8",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "6159f736",
+      "needsInterop": false
+    },
+    "zone.js": {
+      "src": "../../../../../../node_modules/zone.js/fesm2015/zone.js",
+      "file": "zone__js.js",
+      "fileHash": "153ba3c9",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "_resource-chunk-CEdh44di": {
+      "file": "_resource-chunk-CEdh44di.js",
+      "isDynamicEntry": false
+    },
+    "core-DVJdNqZM": {
+      "file": "core-DVJdNqZM.js",
+      "isDynamicEntry": false
+    },
+    "esm5-ChK3bs0s": {
+      "file": "esm5-ChK3bs0s.js",
+      "isDynamicEntry": false
+    },
+    "http-CVSoUR5s": {
+      "file": "http-CVSoUR5s.js",
+      "isDynamicEntry": false
+    },
+    "platform-browser-S9QgjxRA": {
+      "file": "platform-browser-S9QgjxRA.js",
+      "isDynamicEntry": false
+    }
+  }
+}

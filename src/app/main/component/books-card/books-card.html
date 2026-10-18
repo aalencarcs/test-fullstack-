@@ -1,0 +1,26 @@
+<div class="books-grid">
+  @for (book of books; track $index) {
+    <div class="book-card">
+      <div class="title">
+        <h3>{{ book.title }}</h3>
+        <span>by {{ book.author }}</span>
+      </div>
+
+      <div class="details">
+        <p>{{ book.sections[0]?.text }}</p>
+        <app-bookstore-tag
+          [clickable]="false"
+          [tone]="tagTone.get(book.difficulty) ?? defaultTone"
+          [values]="[book.difficulty]"
+        >
+        </app-bookstore-tag>
+      </div>
+
+      <div class="actions">
+        <button [routerLink]="['/quest', book.id]"
+        class="quest-button"
+        >Begin Quest</button>
+      </div>
+    </div>
+  }
+</div>

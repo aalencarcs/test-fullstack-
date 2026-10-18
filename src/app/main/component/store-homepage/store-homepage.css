@@ -1,0 +1,189 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.main-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  color: #f9f7f6;
+}
+
+.main-center h2,
+.main-center h3,
+.main-center span {
+  margin: 0;
+}
+
+.main-center h2 {
+  font-size: 2rem;
+}
+
+.main-center h3 {
+  font-size: 1rem;
+  max-width: 40rem;
+  line-height: 1.5;
+}
+
+.main-center span {
+  font-size: 0.95rem;
+}
+
+.filters-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: #f5f5f5;
+  cursor: pointer;
+  font: inherit;
+}
+
+.tag:hover {
+  background: #eaeaea;
+}
+
+.books-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+}
+
+.book-card {
+  margin: 0;
+  justify-content: space-between;
+}
+
+.description {
+  margin: 20px;
+  background: #614f46;
+  width: 60%;
+  height: 220px;
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  border-radius: 10px;
+  gap: inherit;
+}
+
+.description > h2{
+  margin: 20px;
+  color: #eebd5d;
+}
+
+.description > h3{
+  margin: 10px;
+}
+
+.search-box{
+  display: flex;
+  gap: 16px;
+}
+
+.search-box input{
+  border: none;
+  background: #614f46;
+}
+
+.search-box button{
+  border: none;
+  background: #614f46;
+  color: white;
+}
+
+.description-library{
+  margin: 20px;
+  width: 60%;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-library h2{
+  margin: 20px;
+  color: #433025;
+}
+
+.description-library h3{
+  margin: 20px;
+  color: #8d7e74;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+
+  width: 460px;
+  height: 42px;
+  padding: 4px;
+
+  background: #f7f0e6;
+  border: 1px solid #ead8b8;
+  border-radius: 11px;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+
+  padding: 0 12px;
+
+  border: 0;
+  outline: 0;
+  background: transparent;
+
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.search-box input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  height: 32px;
+  padding: 0 16px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #d9a441;
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background: #c89435;
+}
+
+.search-button:active {
+  transform: translateY(1px);
+}
+
+.filters-row span{
+  color: #8c7d73;
+}

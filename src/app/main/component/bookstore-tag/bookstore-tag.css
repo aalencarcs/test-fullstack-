@@ -1,0 +1,18 @@
+.bookstore-tag {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  color: #5c4b3f;
+  font: inherit;
+}
+
+.bookstore-tag--clickable {
+  cursor: pointer;
+}
+
+.bookstore-tag--selected {
+  border-color: #93c5fd;
+}

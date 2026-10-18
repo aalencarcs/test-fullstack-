@@ -1,0 +1,65 @@
+<div class="container">
+
+  <header class="quest-header">
+    <button type="button" class="left" (click)="onBackToTheLibrary()">
+      <span class="arrow">&#8592;</span> Back to Library
+    </button>
+    <span class="center">
+      {{ book?.title }}
+    </span>
+    <button type="button" class="right" (click)="saveProgress()">
+      Save Progress
+    </button>
+  </header>
+
+  <div class="book-container">
+    <div class="book-card">
+      <div class="book-section">
+        <p>{{ currentSection?.text }}</p>
+      </div>
+
+      <hr/>
+
+      <div class="option-section">
+        @if (!isCurrentSectionEnded()) {
+          <div class="option-container">
+            <h2>What do you choose?</h2>
+            <span class="life-badge">Life: {{ USER_HEALTH }}</span>
+          </div>
+          <div class="options">
+            @if (currentSection?.options?.length) {
+              @for (option of currentSection.options; track $index) {
+                <button type="button" class="option-card" (click)="onChoosingOption(option)">
+                  <span class="option-number">{{ $index + 1 }}</span>
+                  <span class="option-content">
+                    <span class="option-description">{{ option.description }}</span>
+                    @if (getOptionHint(option); as hint) {
+                      <span class="option-hint">{{ hint }}</span>
+                    }
+                  </span>
+                </button>
+              }
+            }
+          </div>
+        }
+      </div>
+    </div>
+
+    @if (showEndModal) {
+      <app-consequence-modal
+        title="The End"
+        [text]="endModalText"
+        (close)="closeEndModal()">
+      </app-consequence-modal>
+    }
+
+    @if (showConsequenceModal && selectedConsequence) {
+      <app-consequence-modal
+        title="Consequence"
+        [text]="selectedConsequence.text"
+        [secondaryText]="healthText + ': ' + selectedConsequence.value"
+        (close)="closeConsequenceModal()">
+      </app-consequence-modal>
+    }
+  </div>
+</div>

@@ -1,0 +1,12 @@
+@for (value of values; track value) {
+  <button
+    type="button"
+    class="bookstore-tag"
+    [class.bookstore-tag--clickable]="clickable"
+    [class.bookstore-tag--selected]="isSelected(value)"
+    [style.background-color]="isSelected(value) ? selectedTone : tone"
+    (click)="onTagClick(value)"
+  >
+    {{ value }}
+  </button>
+}

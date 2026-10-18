@@ -1,0 +1,159 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #fbf9f8;
+  padding: 0 16px;
+}
+
+.quest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.quest-header .center {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3ebe1;
+  color: #7a5a2f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 80px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #443d37;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid #e4dcd0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #443d37;
+  cursor: pointer;
+}
+
+.right:hover, .left:hover {
+  opacity: 0.75;
+}
+
+.book-container {
+  padding-bottom: 40px;
+}
+
+.book-card {
+  background: #fdfaf6;
+  border: 1px solid #ede3d3;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.book-section {
+  margin-bottom: 20px;
+}
+
+.book-section > p {
+  color: #3a332d;
+  line-height: 1.6;
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ede3d3;
+  margin: 20px 0;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.option-container h2 {
+  color: #3a2a1c;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.life-badge {
+  background: #f3ebe1;
+  color: #7a5a2f;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 80px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.option-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+  border: 1px solid #ede3d3;
+  background-color: #fdfaf6;
+  border-radius: 10px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.option-card:hover {
+  border-color: #c9a35b;
+  background-color: #f7f0e6;
+}
+
+.option-number {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #3a2a1c;
+  color: #fdfaf6;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.option-description {
+  color: #2c241d;
+  font-weight: 500;
+}
+
+.option-hint {
+  color: #9a8f80;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
